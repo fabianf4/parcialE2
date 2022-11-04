@@ -23,5 +23,13 @@ public class MatterService {
           return mattersRepository.findAll();
     }
 
+    public Matter delete(Matter matter) {
+        mattersRepository.delete(matter);
+        return matter;
+    }
+
+    public Matter update(Matter matter) {
+        return mattersRepository.save(matter);
+    }
 }
 
