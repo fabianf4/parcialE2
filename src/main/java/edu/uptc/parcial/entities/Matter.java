@@ -1,9 +1,7 @@
 package edu.uptc.parcial.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 
 @Entity
 @Table(name = "matters")
@@ -18,7 +16,6 @@ public class Matter {
 
     @Column(length = 10, nullable = false)
     private String credits;
-
 
     public Matter() {
     }
